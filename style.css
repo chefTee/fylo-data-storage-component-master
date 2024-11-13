@@ -68,6 +68,7 @@ body{
     background-color: white;
     border-radius: 5px;
     border-bottom-right-radius: 0;
+    animation: slideIn 0.3s ease-out;
 }
 .range-bar-container .notification-bar::before{
     content: "";
@@ -81,13 +82,29 @@ body{
 .range-bar-container .notification-bar::after{
     content: "";
     width: 20px;
-    height: 30px;
+    height: 31px;
     left: 82%;
     position: absolute;
-    bottom: -66.5%;
+    bottom: -69.25%;
     background-color: var(--dark-blue);
-    transform: rotate(123.01deg);
-}
+    transform: rotate(125deg);
+} 
+
+  
+  /* Create the main triangle 
+  .notification-bar::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -20px; /* Half the triangle height */
+    /* Create a right triangle 
+    border-left: 20px solid transparent;
+    border-right: 0;
+    border-top: 20px solid white;
+  }*/
+  
+
+  
 .range-bar-container .notification-bar p{
     display: flex;
     align-items: center;
