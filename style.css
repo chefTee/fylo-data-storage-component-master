@@ -237,6 +237,9 @@ body{
     
 }
 @media(max-width: 425px){
+    .fylo-section{
+        height: 50vh;
+    }
     .fylo-container{
         width: 90%;
     }
