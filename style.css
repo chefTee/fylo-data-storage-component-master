@@ -142,6 +142,7 @@ body{
     position: absolute;
     border-radius: 666px;
     border: none;
+    border-right: 6px solid hsl(335, 100%, 65%);
     background-image: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
 }
 .range-bar-container .range-bar::after{
@@ -151,7 +152,7 @@ body{
     position: absolute;
     top: calc(50% + 2px);
     transform: translateY(-50%);
-    left: 65%;
+    left: 67%;
     border-radius: 100%;
     border: none;
     background-color: white;
@@ -169,7 +170,11 @@ body{
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-
+@media(max-width: 768px){
+    .range-bar-container .range-bar::after{
+        left: 64%;
+    }
+}
 @media(max-width: 600px){
     body{
         width: 100%;
@@ -202,6 +207,9 @@ body{
         width: 70%;
         padding: 1.5rem 2rem 3rem 2rem;
         border-radius: 1rem;
+    }
+    .range-bar-container .range-bar::after{
+        left: 65.5%;
     }
     .range-bar-container .data-summary{
         width: 100%;
